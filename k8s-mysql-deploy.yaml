@@ -73,7 +73,7 @@ kind: Service
 metadata:
   name: mysql
 spec:
-  type: NodePort
+  type: LoadBallancer
   ports:
   - port: 3306
   selector:
