@@ -9,7 +9,7 @@ data:
     - name: default
       protocol: layer2
       addresses:
-      - 10.10.0.2-10.10.0.50
+      - 10.123.123.2-10.123.123.50
 ---
 apiVersion: v1
 kind: Secret
