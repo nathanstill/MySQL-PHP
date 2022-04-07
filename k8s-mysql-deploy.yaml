@@ -118,7 +118,7 @@ kind: Service
 metadata:
   name: adminer
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
   - port: 8080
   selector:
