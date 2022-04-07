@@ -75,6 +75,6 @@ metadata:
 spec:
   type: NodePort
   ports:
-  - port: 3306
+  - port: 303306
   selector:
     app: mysql
