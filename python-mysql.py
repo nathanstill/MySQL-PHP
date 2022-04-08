@@ -31,3 +31,15 @@ for user in users:
     print(user)
     print('First Name: ' + user[1])
     print('Last Name: ' + user[2])
+
+print('What course do you want? ')
+userRequest = input()
+
+mycursor.execute('select firstname,lastname from student left join courseEnrollment cE on student.studentID = cE.studentID left join course c on cE.courseID = c.courseID where title = "'+userRequest + '"')
+users = mycursor.fetchall()
+
+for user in users:
+    print(user)
+    print('First Name: ' + user[0])
+    print('Last Name: ' + user[1])
+
