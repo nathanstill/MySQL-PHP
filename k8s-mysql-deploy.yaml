@@ -34,7 +34,7 @@ spec:
       storage: 20Gi
 ---
 apiVersion: apps/v1
-kind: Statefulset
+kind: StatefulSet
 metadata:
   name: mysql
 spec:
