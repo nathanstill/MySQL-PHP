@@ -8,8 +8,9 @@ To check you did this right, run:
 ```
 kubectl get all --all-namespaces
 ```
+5. Jump to step 7 in the instructions below to finish the install (you might not need to install kubectl)
 
-# M1 Install Process
+# Install KIND In Multipass (if the above method doesn't work)
 1. Install Multipass: https://multipass.run/docs/installing-on-macos
 2. Create a multipass VM: ```multipass launch --name mysql --mem 4G --disk 15G --cpus 2 impish```
 3. Login to the VM: ```multipass shell mysql```
@@ -37,7 +38,21 @@ make install
 sudo /home/ubuntu/go/bin/kind create cluster
 ```
 7. Clone this repo
-8. Install Kubectl
+```
+git clone https://github.com/nathanstill/K8S-MySQL-Template.git
+```
+9. Install Kubectl
 ```
 sudo snap install kubectl --classic
+```
+10. Apply the YAML file (modify password beforehand)
+```
+cd K8S-MySQL-Template/
+sudo kubectl apply -f ./k8s-mysql-deploy.yaml
+sudo kubectl get all --all-namespaces
+```
+11. Repeat the last command as necessary until all pods are ready
+12. Run the following command to expose your mysql database to the local machine (outside the multipass VM)
+```
+sudo kubectl port-forward --address 0.0.0.0 service/mysql 3306:3306
 ```
