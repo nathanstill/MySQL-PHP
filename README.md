@@ -34,5 +34,5 @@ git clone https://github.com/kubernetes-sigs/kind.git
 sudo apt install make
 cd kind
 make install
-/home/ubuntu/go/bin/kind create cluster
+sudo /home/ubuntu/go/bin/kind create cluster
 ```
