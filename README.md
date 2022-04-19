@@ -39,5 +39,5 @@ sudo /home/ubuntu/go/bin/kind create cluster
 7. Clone this repo
 8. Install Kubectl
 ```
-snap install kubectl --classic
+sudo snap install kubectl --classic
 ```
