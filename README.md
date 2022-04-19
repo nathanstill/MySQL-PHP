@@ -12,7 +12,7 @@ kubectl get all --all-namespaces
 
 # Install KIND In Multipass (if the above method doesn't work)
 1. Install Multipass: https://multipass.run/docs/installing-on-macos
-2. Create a multipass VM: ```multipass launch --name mysql --mem 4G --disk 15G --cpus 2 lts```
+2. Create a multipass VM: ```multipass launch --name mysql --mem 4G --disk 15G --cpus 2 bionic```
 3. Login to the VM: ```multipass shell mysql```
 4. Update Ubuntu: 
 ```
