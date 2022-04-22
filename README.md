@@ -9,7 +9,8 @@ shutdown -r now
 ```
 5. After restarting, open VirtualBox and create the Ubuntu VM (including attaching the Ubuntu Server iso for installation)
 6. Install Ubuntu Server (default options)
-7. Continue from step 4 in the Multipass instructions.
+7. Start the VM and agree to any requested permissions.
+8. Continue from step 4 in the Multipass instructions.
 
 # Install KIND (Kubernetes in Docker)
 1. Install Docker Desktop
