@@ -1,3 +1,16 @@
+# Install VirtualBox
+1. Download and install Virtual box.
+2. Restart the mac holding down Command+R when the apple logo appears
+3. Login to your account and open up the terminal.
+4. Enable the following kernal extension provider (Oracle):
+```
+spctl kext-consent add VB5E2TV963
+shutdown -r now
+```
+5. After restarting, open VirtualBox and create the Ubuntu VM (including attaching the Ubuntu Server iso for installation)
+6. Install Ubuntu Server (default options)
+7. Continue from step 4 in the Multipass instructions.
+
 # Install KIND (Kubernetes in Docker)
 1. Install Docker Desktop
 2. Install brew (if you don't have it already)
