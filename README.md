@@ -17,6 +17,7 @@ sudo mkdir /mnt/cdrom
 sudo mount /dev/sr0 /mnt/cdrom
 cd /mnt/cdrom
 sudo sh ./VBoxLinuxAdditions.run
+sudo apt-get install virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
 ```
 10. Continue from step 4 in the Multipass instructions.
 
