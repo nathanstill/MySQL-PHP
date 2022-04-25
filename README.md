@@ -16,7 +16,7 @@ blkid
 sudo mkdir /mnt/cdrom
 sudo mount /dev/sr0 /mnt/cdrom
 cd /mnt/cdrom
-sh ./VBoxLinuxAdditions.run
+sudo sh ./VBoxLinuxAdditions.run
 ```
 10. Continue from step 4 in the Multipass instructions.
 
