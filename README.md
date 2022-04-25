@@ -10,7 +10,15 @@ shutdown -r now
 5. After restarting, open VirtualBox and create the Ubuntu VM (including attaching the Ubuntu Server iso for installation)
 6. Install Ubuntu Server (default options)
 7. Start the VM and agree to any requested permissions.
-8. Continue from step 4 in the Multipass instructions.
+8. Install the Virtual Box software by mounting the Guest Additions CD (under Devices).
+```
+blkid
+sudo mkdir /mnt/cdrom
+sudo mount /dev/sr0 /mnt/cdrom
+cd /mnt/cdrom
+sh ./VBoxLinuxAdditions.run
+```
+10. Continue from step 4 in the Multipass instructions.
 
 # Install KIND (Kubernetes in Docker)
 1. Install Docker Desktop
