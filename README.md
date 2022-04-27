@@ -77,6 +77,7 @@ sudo kubectl get all --all-namespaces
 12. Run the following command to expose your mysql database to the local machine (outside the multipass VM)
 ```
 sudo kubectl get service
+ip addr show
 sudo kubectl port-forward --address 0.0.0.0 service/mysql 3306:3306
 sudo kubectl port-forward --address 0.0.0.0 service/adminer 8080:8080
 ```
